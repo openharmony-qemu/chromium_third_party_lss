@@ -1,10 +1,11 @@
 [
     {
-        "Name": "linux-syscall-support",                   # 上游开源软件名全称
-        "License":        # 上游开源软件中包含的许可证信息
-        "License File": "LICENSE",       # 许可证所在文件路径
+        "Name": "linux-syscall-support",
+        "License": "BSD-3-Clause",
+        "License File": "LICENSE",
         "Version Number": "92a65a8f5d705d1928874420c8d0d15bde8c89e5",
-        "Upstream URL": "https://chromium.googlesource.com/linux-syscall-support.git@92a65a8f5d705d1928874420c8d0d15bde8c89e5",   # 上游软件包发布地址
-        "Description": "第三方软件lss"           # 开源软件功能描述
+        "Owner": "huangjiewen2@huawei.com",
+        "Upstream URL": "https://chromium.googlesource.com/linux-syscall-support.git@92a65a8f5d705d1928874420c8d0d15bde8c89e5",
+        "Description": "第三方软件lss"
     }
 ]
