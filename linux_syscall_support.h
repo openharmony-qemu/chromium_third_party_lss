@@ -86,11 +86,11 @@
  * on Linux.
  * Porting to other related platforms should not be difficult.
  */
-#if (defined(__i386__) || defined(__x86_64__) || defined(__ARM_ARCH_3__) ||   \
-     defined(__mips__) || defined(__PPC__) || defined(__ARM_EABI__) || \
-     defined(__aarch64__) || defined(__s390__) || defined(__e2k__) ||  \
-     (defined(__riscv) && __riscv_xlen == 64) || defined(__loongarch_lp64))  \
-  && (defined(__linux) || defined(__ANDROID__) || defined(__MUSL__))
+#if (defined(__i386__) || defined(__x86_64__) || defined(__ARM_ARCH_3__) ||    \
+     defined(__mips__) || defined(__PPC__) || defined(__ARM_EABI__) ||         \
+     defined(__aarch64__) || defined(__s390__) || defined(__e2k__) ||          \
+     (defined(__riscv) && __riscv_xlen == 64) || defined(__loongarch_lp64)) && \
+    (defined(__linux) || defined(__ANDROID__) || defined(__MUSL__))
 
 #ifndef SYS_CPLUSPLUS
 #ifdef __cplusplus
@@ -4946,7 +4946,7 @@ struct kernel_statx {
     }
   # endif
   #endif
-  #if defined(__NR_fstatat64) && !defined(__MUSL__)
+  #if defined(__NR_fstatat64)
     LSS_INLINE _syscall4(int,   fstatat64,        int,   d,
                          const char *,      p,
                          struct kernel_stat64 *,   b,    int,   f)
