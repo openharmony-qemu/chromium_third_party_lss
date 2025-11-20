@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "linux-syscall-support",
+        "License": "BSD-3-Clause",
+        "License File": "LICENSE",
+        "Version Number": "ce877209e11aa69dcfffbd53ef90ea1d07136521",
+        "Owner": "huamengzheng@huawei.com",
+        "Upstream URL": "https://chromium.googlesource.com/linux-syscall-support.git@ce877209e11aa69dcfffbd53ef90ea1d07136521",
+        "Description": "第三方软件lss，提供查询和改变CANopen模块底层参数的功能"
+    }
+]
